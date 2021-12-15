@@ -1,4 +1,4 @@
-# Driver for Fantech X9 Thor
+# Driver for Fantech VX7
 
 This is an open-source driver for the Fantech X9 Thor RGB gaming mouse targeted for linux systems (although it should work in any environment that supports gtk).
 
