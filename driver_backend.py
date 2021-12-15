@@ -4,8 +4,8 @@ import usb.util
 
 class Driver(object):
     def __init__(self):
-        self.x9_vendorid = 0x18f8  # vendorid
-        self.x9_productid = 0x1086  # productid
+        self.x9_vendorid = 0x30fa # vendorid
+        self.x9_productid = 0x1701 # productid
         self.bmRequestType = 0x21  # bmRequestType
         self.bRequest = 0x09  # bRequest
         self.wValue = 0x0307  # wValue
@@ -166,7 +166,7 @@ class Driver(object):
         if DPI in self.supported_dpis:
             return DPI
 
-        difference = 4800
+        difference = 1000
         best_match = int()
         for supported in self.supported_dpis:
             temp_diff = DPI - supported
